@@ -1,0 +1,556 @@
+/*Подключение шрифта*/
+@font-face {
+font-family: "BebasNeue"; 
+src: url("fonts/BebasNeue.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+
+@font-face {
+font-family: "OpenSans"; 
+src: url("fonts/OpenSans.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}  
+/*Подключение шрифта*/
+
+
+
+
+/*Общие стили*/
+body{
+	margin: 0;
+}
+
+button{
+	display: block;
+}
+
+.hover{
+	cursor: pointer;
+}
+
+#categories button, #sale button{
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+	background: #3cc395;
+	color: #ffffff;
+	font-family: "BebasNeue";
+	font-size: 19px;
+	font-weight: 400;
+}
+
+/*Общие стили*/
+
+
+
+
+/*Стилизация Поиска*/
+#search{
+	width: 38%;
+	float: left;
+	padding: 20px 15px 15px 80px;
+}
+
+.searchbox{
+	max-width: 400px;
+	position: relative;	
+}
+
+.searchbox input{
+	float: left;
+	width: 100%;
+	height: 30px;
+	border: 1px solid #E1E1E1;
+	border-right-style: none;		
+}
+
+.searchbox .input{
+	width: 100%;
+	background: #ffffff;
+	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.searchbox .submit{
+	border: 1px solid #E1E1E1;
+	border-left-style: none;
+	height: 30px;
+	position: absolute;
+    width: 10%;
+    cursor: pointer;
+    background: url(image/shape-1.png) center no-repeat;
+    background-size: 60% 70%;
+ }
+
+ #header form input{
+ 	color: #a1a1a1;
+ 	font-family: "OpenSans";
+	font-size: 17px;
+	font-weight: 400;
+ }
+/*Стилизация Поиска*/
+
+
+
+
+/*Стилизация Лого и Суммы*/
+#header{
+	float: left;
+	width: 100%;
+	background: #ffffff;
+}
+
+#logo{
+	float: left;
+	padding: 15px;
+}
+
+#cart{
+	float: right;
+	padding: 15px 15px 0px 15px;
+}
+
+#cart h3 {
+	font-family: "BebasNeue";
+    margin: 3px;
+    font-size: 33px;
+	font-weight: 400;
+	float: right;
+    padding-left: 10px;
+    color: #a1a1a1;
+}    
+/*Стилизация Лого Поиска и Суммы*/
+
+
+
+
+/*Стилизация панели навигации*/
+#nav{
+	background: #4ccfc1;
+	float: left;
+	width: 100%;
+}
+
+#nav ul{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.wrap{
+	max-width: 803px;
+	margin: auto;
+}
+
+#nav ul li a{
+	font-family: "BebasNeue";
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+	display: block;
+	transition: 0.3s;
+}
+
+#nav ul li a:hover{
+	background: #3bead836;
+}
+
+#nav ul li{
+	float: left;
+	list-style-type: none;
+}
+
+#nav li.icon{
+	display: none;
+	float: right;
+}
+/*Стилизация панели навигации*/
+
+
+
+
+/*Стилизация банера*/
+#banner{
+	float: left;
+	background: #37c7ba;
+	width: 100%;
+}
+
+#bannerText{
+	padding-left: 30px;
+    width: 57%;
+    float: left;
+    box-sizing: border-box; 
+}
+
+#bannerImg{
+	width: 40%;
+	float: left;
+	padding: 40px 0px 40px 20px;
+
+}
+
+#bannerText h1{
+	margin: 40px 0px 0px 0px;
+	color: #ffffff;
+	font-family: "BebasNeue";
+	font-size: 61px;
+	font-weight: 400;
+}
+
+#bannerText p{
+	margin: 0px 0px 10px 0px;
+	color: #ffffff;
+	font-family: "OpenSans";
+	font-size: 17px;
+	font-weight: 400;
+}
+
+#bannerText button{
+	margin-top: 30px;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: 3px solid #ffffff;
+	background: #37c7ba;
+	color: #ffffff;
+	font-family: "BebasNeue";
+	font-size: 27px;
+	font-weight: 400;
+}
+
+#radio{
+	clear: both;
+	text-align: center;
+}
+
+#radioBorder {
+    padding-bottom: 20px;
+}
+/*Стилизация банера*/
+
+
+
+
+/*Стилизация категорий*/
+#categories{
+	float: left;
+	width: 100%;
+	background: #ffffff;
+}
+
+.pBorder{
+    border: 1px solid #dbdbdb85;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding: 5px;
+}
+
+.product{
+	padding: 5px;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.product img{
+	width: 100%;
+}
+
+.product button{
+	margin-left: 15px;
+}	
+
+.categoriesText{
+    width: 30%;
+    float: left;
+    box-sizing: border-box; 
+}
+
+.categoriesImg{
+	text-align: center;
+    width: 132px;
+    float: left;
+    box-sizing: border-box;
+
+}
+
+.product h3, #sale h3{
+	margin: 15px 0px 0px 15px;
+	color: #afafaf;
+	font-family: "BebasNeue";
+	font-size: 23px;
+	font-weight: 400;
+	width: 100%
+}
+
+#leftArrow{
+	width: 5%;
+	padding-top: 30px;
+	float: left;
+}
+
+#rightArrow{
+	width: 5%;
+	padding-top: 30px;
+	float: right;
+}
+/*Стилизация категорий*/
+
+
+
+
+/*Стилизация  продажи продукта*/
+#headerProduct{
+	background: #39c5b7;
+	float: left;
+	width: 100%;
+}
+
+#featuredProduct h1{
+	color: #ffffff;
+	font-family: "BebasNeue";
+	font-size: 31px;
+	font-weight: 400;
+}
+
+.sBorder{
+    border: 1px solid #dbdbdb85;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding: 45px;
+    box-shadow: 0px 6px 5px -2px rgba(60,195,149,1);
+}
+
+.productSale{
+	padding: 10px;
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+
+}
+
+#sale button{
+	display: inline;
+	margin: 0px 5px;
+}
+
+#sale{
+	float: left;
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 60px;
+}
+
+#sale img{
+	width: 100%;
+}
+
+.saleImg{
+	text-align: center;
+}
+/*Стилизация продукта*/
+
+
+
+
+/*Стилизация Footer*/
+#footer{
+	background: #3cc3b5;
+	float: left;
+	width: 100%;
+}
+
+#footer h3{
+	color: #ffffff;
+	font-family: "BebasNeue";
+	font-size: 27px;
+	font-weight: 400;
+
+}
+
+#footer ul li a{
+	color: #ffffff;
+	font-family: "OpenSans";
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+#footer ul li{
+	list-style-type: none;
+}
+
+.footerList{
+	float: left;
+    width: 25%
+}
+
+.footerBorder{      
+    width: 100%;
+    float: left;
+ } 
+ 
+ #footer h3{
+ 	padding-left: 40px;
+ }
+/*Стилизация Footer*/
+
+
+
+
+/*Стилизация Product by*/
+#productBy{
+	background: #2da89b;
+	float: left;
+	width: 100%;
+}
+
+#productBy h3{
+	color: #ffffff;
+	font-family: "OpenSans";
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+/*Стилизация Product by*/
+
+
+
+
+/*Адаптация*/
+@media(max-width: 820px){
+
+	ul.topnav li:not(:first-child){
+		display: none;
+	}
+
+	#nav li.icon{
+		display: block;
+	}
+	
+	.hover {       
+		display: none;
+	}
+
+	.product {
+	    margin: 0 auto;
+	    padding: 5px;
+	    float: left;
+	    width: 50%;
+	    box-sizing: border-box;	
+	}    
+
+}
+	
+@media(max-width: 820px){
+	#nav ul.topnav.responsive{
+		position: relative;
+	}
+	#nav ul.topnav.responsive li.icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	#nav ul.topnav.responsive li{
+		float: none;
+		display: inline;
+	}
+
+	#nav ul.topnav.responsive li a{
+		display: block;
+		text-align: center;
+	}
+}
+
+@media(max-width: 770px){
+	
+		#bannerImg {
+	    text-align: center;
+	    width: 100%;
+	    padding: 20px 0px 0px 0px;
+	}
+	
+		#bannerText {
+	    padding: 0px 20px;
+    	width: 100%;
+    	float: left;
+	}
+
+		#bannerText h1 {
+	    margin: 0px;
+	    color: #ffffff;
+	    font-family: "BebasNeue";
+	    font-size: 61px;
+	    font-weight: 400;
+	}
+}
+
+
+@media(max-width: 720px){
+	.productSale{
+		width: 50%
+	}
+}
+
+
+@media(max-width: 681px){
+	.footerList{
+		width: 50%
+	}
+}
+
+
+@media(max-width: 488px){
+	.productSale{
+		width: 75%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.product {
+	    margin: 0 auto;
+	    padding: 5px;
+	    width: 75%;
+	    box-sizing: border-box;
+	    float: none;	
+	}
+	.sBorder {
+		margin: 10px;
+	}
+	.pBorder {
+		margin: 5px;	
+	}
+}
+
+@media (max-width: 390px){
+	.product {
+	    margin: 0 auto;
+	    padding: 5px;
+	    width: 90%;
+	    box-sizing: border-box;
+	    float: none;
+	}
+
+	.productSale{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+/*Адаптация*/
+
+
+
+
+
+
+
+
+
